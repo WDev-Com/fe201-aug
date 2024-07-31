@@ -190,3 +190,5 @@ class CarClass {
 const carObj = new CarClass("red", "Toyota", 12);
 console.log("CarObj", carObj);
 carObj.drive();
+
+// console.log(typeof CarClass);
