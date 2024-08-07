@@ -16,6 +16,14 @@ export class Counter extends React.Component {
     this.setState({
       count: this.state.count + this.props.calculationValue,
     });
+
+    // this.setState((state, props) => {
+    //   console.log("State", state);
+    //   console.log("props", props);
+    //   return {
+    //     count: this.state.count + this.props.calculationValue,
+    //   };
+    // });
   }
   decrement() {
     this.setState({
