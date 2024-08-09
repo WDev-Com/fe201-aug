@@ -9,6 +9,7 @@ export default class Controlled extends React.Component {
     super(props);
     this.state = {
       fullName: "Alok",
+      count: 0,
     };
   }
 
@@ -51,8 +52,9 @@ export default class Controlled extends React.Component {
             />
           </label>
           <br />
-          {this.state.fullName.length <= 4 ? <Temp /> : null}
-          <input type="submit" value="Submit" />
+          <Temp count={this.state.count} />
+          {/* {this.state.fullName.length <= 4 ? <Temp /> : null}
+          <input type="submit" value="Submit" /> */}
         </form>
       </div>
     );

@@ -1,7 +1,7 @@
 import React from "react";
 
 // Uncontrolled component
-export default class Temp extends React.Component {
+export default class Temp extends React.PureComponent {
   componentDidMount() {
     console.log("Temp Mounted");
   }
